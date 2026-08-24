@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a {
@@ -175,8 +176,8 @@ p {
 /* Features */
 
 #features {
-    height: 1000px;
     background-color: #FAFAFA;
+    position: relative;
 }
 
 .features__text {
@@ -195,30 +196,38 @@ p {
     font-weight: 500px;
 }
 
+.features__abilitys {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
 .ability__list {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     width: calc(100% / 3);
+    list-style: none;
 }
 
 .ability {
     display: flex;
-    align-items: flex-start;
-    padding: 32px 24px;
+    flex-direction: row;
+    width: 80%;
 }
 
 .feature__ability--img {
     border: 2px solid rgb(229, 231, 235);
     border-radius: 500px;
     padding: 10px 10px;
-    width: 15%;
-    height: 50%;
+    width: 10%;
+    height: 35%;
 }
 
 .ability__seperat {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    padding: 0 18px;
+    padding: 0 10px;
 }
 
 .feature__ability--title {
@@ -226,7 +235,7 @@ p {
 }
 
 .ability__para {
-    width: 40%;
+    width: 175px;
     font-size: 18px;
     color: #999DA0;
 }
