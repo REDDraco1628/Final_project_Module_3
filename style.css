@@ -634,3 +634,88 @@ p {
     width: 100%;
     justify-content: space-between;
 }
+
+/*  Testimonials */
+
+#testimonials {
+    margin-top: 550px;
+    background-color: #FAFAFA;
+    height: 650px;
+}
+
+.test__row {
+    display: flex;
+    flex-direction: row;
+}
+
+.test__img {
+    display: flex;
+    width: 80%;
+}
+
+.test__column {
+    width: 50%;
+}
+
+.test__title {
+    font-size: 24px;
+}
+
+.test__para {
+    width: 80%;
+}
+
+.fa-star {
+    margin-top: 25px;
+    color: #FFD700;
+}
+
+.test__review--para {
+    font-size: 18px;
+    width: 80%;
+}
+
+.test__review--person {
+    display: flex;
+    flex-direction: row;
+}
+
+.review__img {
+    width: 10%;
+    border-radius: 50px;
+}
+
+.test__review--person--text {
+    margin-left: -480px;
+}
+
+.test__btn {
+    margin-left: 200px;
+}
+
+.review__arrow--left {
+    margin-top: 20px;
+    padding: 18px 20px;
+    border-radius: 500px;
+    border: none;
+    color: #6415ff;
+    font-size: 22px;
+    margin-right: 25px;
+    transition: all 300ms ease;
+}
+
+.review__arrow--right {
+    padding: 18px 20px;
+    border-radius: 500px;
+    border: none;
+    color: #6415ff;
+    font-size: 22px;
+    transition: all 300ms ease;
+}
+
+.review__arrow--left:hover,
+.review__arrow--right:hover {
+    cursor: pointer;
+    opacity: 0.90;
+    transform: translate(1px, -1px);
+}
