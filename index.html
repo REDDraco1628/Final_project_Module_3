@@ -15,20 +15,32 @@
                 <div class="container">
                     <div class="row">
                         <div class="nav__container">
-                            <div class="title__container">
-                                <img class="nav__logo" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"></img>
-                                <h2> Treact </h2>
-                            </div>
-                            <ul class="nav__list">
-                                <li class="nav__links"><a href="#about"> About </a></li>
-                                <li class="nav__links"><a href="#">Blog </a></li>
-                                <li class="nav__links"><a href="#"> Pricing </a></li>
-                                <li class="nav__links"><a href="#"> Contact Us </a></li>
-                            </ul>
-                            <ul class="nav__list-2">
-                                <li class="nav__links nav__last"><a href="#"> Login </a></li>
-                                <li class="nav__links nav__last nav__link--primary"><a href="#"> Sign Up </a></li>
-                            </ul>
+                                <div class="title__container">
+                                    <img class="nav__logo" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"></img>
+                                    <h2> Treact </h2>
+                                </div>
+                                <ul class="nav__list">
+                                    <li class="nav__links"><a href="#about"> About </a></li>
+                                    <li class="nav__links"><a href="#">Blog </a></li>
+                                    <li class="nav__links"><a href="#"> Pricing </a></li>
+                                    <li class="nav__links"><a href="#"> Contact Us </a></li>
+                                </ul>
+                                <ul class="nav__list-2">
+                                    <li class="nav__links nav__last"><a href="#"> Login </a></li>
+                                    <li class="nav__links nav__last nav__link--primary"><a href="#"> Sign Up </a></li>
+                                </ul>
+                                <button class="nav__menu--btn" onclick="hamburg__open()"><i class="fa-solid fa-bars"></i></button>
+                                <div class="nav__menu--backdrop">
+                                    <button class="nav__menu--close" onclick="hamburg__close()"><i class="fas fa-times"></i></button>
+                                    <ul class="nav__menu--list">
+                                        <li class="menu__links"><a href="#about"> About </a></li>
+                                        <li class="menu__links"><a href="#">Blog </a></li>
+                                        <li class="menu__links"><a href="#pricing"> Pricing </a></li>
+                                        <li class="menu__links"><a href="#"> Contact Us </a></li>
+                                        <li class="menu__links"><a href="#"> Login </a></li>
+                                        <li class="menu__links nav__link--primary"><a href="#"> Sign Up </a></li>
+                                    </ul>
+                                </div>
                         </div>
                     </div>
                 </div>    
@@ -36,16 +48,18 @@
             <div class="container">
                 <div class="row__header">
                     <div id="about" class="text__area">
-                        <h1> Beautiful React Templates <span class="text-purple"> for you. </span></h1>
-                        <p> Our templates are easy to setup, understand and customize.  Fully modular components with a variety of pages and components.</p>
+                        <h1 class="header__title"> Beautiful React Templates <span class="text-purple"> for you. </span></h1>
+                        <p class="header__para"> Our templates are easy to setup, understand and customize.  Fully modular components with a variety of pages and components.</p>
                         <div class="header__email">
                             <input type="text" class="header__email--input" placeholder="Your E-mail Address">
                             <button class="header__email--btn"> Get Started </button>
                         </div>
                         <p class="about__me--para--cust"> OUR TRUSTED CUSTOMERS </p>
-                        <figure>
-                            <img class="cust__img" src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"></img>
-                        </figure>
+                        <div class="cust__img--sect">
+                            <figure>
+                                <img class="cust__img" src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"></img>
+                            </figure>
+                        </div>
                     </div>
                     <figure>
                         <img class="header__img" src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"></img>
@@ -59,7 +73,7 @@
                     <div class="features__text">
                         <h3><span class="text-purple"> Features </span></h3>
                         <h1> We Have Amazing <span class="text-purple"> Service. </span></h1>
-                        <p class="light__text"> Lorem ipsum dolor sit amet, consectetur adipscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <p class="features__text--para light__text"> Lorem ipsum dolor sit amet, consectetur adipscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     </div>
                     <div class="features__list">
                         <div class="feature">
