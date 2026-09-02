@@ -94,50 +94,60 @@ p {
 
 /* Landing */
 
-.nav__menu--backdrop {
-    background-color:#1a202c;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
+.nav__menu--btn {
+    content: "";
+    background-color: #fafafa;
+    text-align: center;
+    border: none;
+    visibility: hidden;
     opacity: 0;
+    margin-left: 565px;
+    width: 20px;
+    height: 20px;
 }
 
-.nav__menu--btn {
-    background: none;
-    border: none;
-    opacity: 0;
-    font-size: 24px;
+.nav__menu--btn:hover {
     cursor: pointer;
 }
 
-.nav__menu--list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.nav__menu--close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__menu--backdrop {
+    position: absolute;
+    background-color: #242424;
+    max-height: 100%;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hamburg__open .nav__menu--backdrop {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.hamburg__open {
+    max-height: 100bh;
+    overflow-y: hidden;
 }
 
 .menu__links {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    padding: 32px;
+    font-size: 40px;
     color: white;
-    font-size: 18px;
-    padding: 30px;
-}
-
-.nav__menu--close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
 }
 
 #landing {
@@ -933,51 +943,21 @@ p {
 
 @media (max-width: 768px) {
 
-.nav__menu--backdrop {
-    background-color:#1a202c;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    opacity: 0;
-}
+    .nav__links {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .menu__links {
+        visibility: visible;
+        opacity: 1;
+    }
 
-.nav__menu--btn {
-    background: none;
-    border: none;
-    opacity: 0;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.nav__menu--list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu__links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 18px;
-    padding: 30px;
-}
-
-.nav__menu--close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
+    .nav__menu--btn {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+    }
 
     #landing {
         height: 1100px;

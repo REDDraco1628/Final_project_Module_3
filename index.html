@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
     <title> Copy Website </title>
     <script src="https://kit.fontawesome.com/46057189c5.js" crossorigin="anonymous"></script>
 </head>
@@ -19,6 +20,7 @@
                                     <img class="nav__logo" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"></img>
                                     <h2> Treact </h2>
                                 </div>
+                                <button class="nav__menu--btn" onclick="hamburg__open()"><i class="fa-solid fa-bars"></i></button>
                                 <ul class="nav__list">
                                     <li class="nav__links"><a href="#about"> About </a></li>
                                     <li class="nav__links"><a href="#">Blog </a></li>
@@ -29,7 +31,6 @@
                                     <li class="nav__links nav__last"><a href="#"> Login </a></li>
                                     <li class="nav__links nav__last nav__link--primary"><a href="#"> Sign Up </a></li>
                                 </ul>
-                                <button class="nav__menu--btn" onclick="hamburg__open()"><i class="fa-solid fa-bars"></i></button>
                                 <div class="nav__menu--backdrop">
                                     <button class="nav__menu--close" onclick="hamburg__close()"><i class="fas fa-times"></i></button>
                                     <ul class="nav__menu--list">
