@@ -456,7 +456,7 @@ p {
 
 .values__img {
     display: flex;
-    width: 145%;
+    width: 95%;
     height: 100%;
 }
 
@@ -1024,7 +1024,117 @@ p {
         height: 350px;
     }
 
+    #quality {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quality__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quality__title {
+        text-align: center;
+    }
+
+    .quality__subtitle {
+        text-align: center;
+    }
+
     .features__text--para {
+        text-align: center;
+    }
+
+    #steps {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px
+    }
+
+    .steps__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #values {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 250px;
+        margin-bottom: 275px;
+    }
+    
+    .values__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .values__text {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .values__subtitle {
+        text-align: center;
+    }
+
+    .values__tags {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .tags__title {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        flex-direction: row;
+        margin-right: auto;
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .tag__img--1 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        flex-direction: row;
+        margin-right: 0;
+        margin-left: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tag__img--2 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        flex-direction: row;
+        margin-right: 0;
+        margin-left: auto;
+        align-items: center;
         text-align: center;
     }
 
@@ -1235,6 +1345,10 @@ p {
   .footer__legal {
     margin-left: 30px;
   }
+
+  .footer__img {
+    margin-right: 20px;
+  }
 }
 
 
@@ -1309,7 +1423,7 @@ p {
   }
 
   #values {
-    margin-top: 5px;
+    margin-top: 450px;
   }
 
   .values__list {
