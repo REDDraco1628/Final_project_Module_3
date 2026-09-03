@@ -1,7 +1,7 @@
  function hamburg__open() {
-    document.body.classList += " nav__menu--backdrop"
+    document.body.classList += " menu--open"
 }
 
 function hamburg__close() {
-    document.body.classList.remove('nav__menu--backdrop')
+    document.body.classList.remove('menu--open')
 }

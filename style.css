@@ -97,6 +97,8 @@ p {
 .nav__menu--btn {
     background-color: transparent;
     font-size: 40px;
+    right: 0;
+    position: absolute;
     text-align: center;
     border: none;
     color: #7342d6;
@@ -119,13 +121,9 @@ p {
     opacity: 0;
 }
 
-.hamburg__open, 
-.nav__menu--backdrop {
-    display: flex;
+.menu--open .nav__menu--backdrop{
     visibility: visible;
     opacity: 1;
-    max-height: 100vh;
-    overflow-y: hidden;
 }
 
 .menu__links {
@@ -150,10 +148,15 @@ p {
 
 .nav__menu--close {
     position: absolute;
-    right: 20px;
-    top: 10px;
+    right: 0px;
+    top: 0px;
     padding: 8px;
     color: white;
+}
+
+.nav__menu--close:hover {
+    cursor: pointer;
+    opacity: 0.85;
 }
 
 #landing {
